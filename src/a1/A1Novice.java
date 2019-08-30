@@ -12,7 +12,7 @@ public class A1Novice {
 		int numPpl = sc.nextInt();
 		for(int i = 0; i < numPpl; i++) {
 			String first = sc.next();
-			first.substring(0,1);
+			first = first.substring(0,1);
 			String last = sc.next();
 			int item = sc.nextInt();
 			double sum = 0.0;
