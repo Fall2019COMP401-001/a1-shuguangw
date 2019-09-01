@@ -8,13 +8,12 @@ public class A1Adept {
 		
 		  Scanner scan = new Scanner(System.in);
 		  int a = scan.nextInt();
-		  String[] objectname = new String[a];
+		  String[] goodsname = new String[a];
 		  double[] price = new double[a];
 		  for(int i = 0; i < a; i++) {
-		   objectname[i] = scan.next();
+		   goodsname[i] = scan.next();
 		   price[i] = scan.nextDouble();
 		  }
-		  //b is the number of ppl
 		  int b = scan.nextInt();
 		  String[] firstname = new String[b];
 		  String[] lastname = new String[b];
@@ -28,7 +27,7 @@ public class A1Adept {
 		    String thisitem = scan.next();
 		    for(int h = 0; h < a; h++) {
 		     
-		     if(thisitem.equals(objectname[h])) {
+		     if(thisitem.equals(goodsname[h])) {
 		      cost[j] += quantity * price[h];
 		     }
 		    }
@@ -61,6 +60,6 @@ public class A1Adept {
 		  System.out.println("Smallest: "+ firstname[indexmin] + " " 
 		  + lastname[indexmin] + " "+ "(" + String.format("%.2f", minnumber) + ")");
 		  System.out.println("Average" + ": " + String.format("%.2f", average));
-		  // Your code follows here.
+		  
 		  }
 		 }

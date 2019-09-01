@@ -18,8 +18,7 @@ public class A1Jedi {
 		  }
 		  int peoplenumber = scan.nextInt();
 		  int[] ppl_buying = new int[a];
-		  
-		  //processing every people
+		 
 		  for(int j = 0; j < peoplenumber; j++) {
 		   scan.next();
 		   scan.next();
